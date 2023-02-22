@@ -1,8 +1,8 @@
 [PSCustomObject]@{
     Welcome         = "
-╔══════════════════════════════╗
-║ Welcome to SpotX for Windows ║
-╚══════════════════════════════╝"
+╔══════════════════════════════════════════════════════╗
+║ Benvenuto nella installazione di Spotify per Windows ║
+╚══════════════════════════════════════════════════════╝"
     Incorrect       = "Ops! Valore sbagliato,"
     Incorrect2      = "inserisci di nuovo"
     Download        = "Errore nel download"
