@@ -342,15 +342,15 @@ function downloadScripts($param1) {
         $links = "https://download.scdn.co/upgrade/client/win32-x86/spotify_installer-$onlineFull.exe"
     }
     if ($ru -and $param1 -eq "cache-spotify") {
-        $links2 = "https://raw.githubusercontent.com/amd64fox/SpotX/main/scripts/cache/cache_spotify_ru.ps1"
+        $links2 = "https://raw.githubusercontent.com/xLamday/SpotX/main/scripts/cache/cache_spotify_ru.ps1"
     }
     if (!($ru) -and $param1 -eq "cache-spotify" ) { 
-        $links2 = "https://raw.githubusercontent.com/amd64fox/SpotX/main/scripts/cache/cache_spotify.ps1"
+        $links2 = "https://raw.githubusercontent.com/xLamday/SpotX/main/scripts/cache/cache_spotify.ps1"
     }
     
     $web_Url_prev = "https://github.com/mrpond/BlockTheSpot/releases/latest/download/chrome_elf.zip", $links, `
-        $links2, "https://raw.githubusercontent.com/amd64fox/SpotX/main/scripts/cache/hide_window.vbs", `
-        "https://raw.githubusercontent.com/amd64fox/SpotX/main/scripts/cache/run_ps.bat"
+        $links2, "https://raw.githubusercontent.com/xLamday/SpotX/main/scripts/cache/hide_window.vbs", `
+        "https://raw.githubusercontent.com/xLamday/SpotX/main/scripts/cache/run_ps.bat"
 
     $local_Url_prev = "$PWD\chrome_elf.zip", "$PWD\SpotifySetup.exe", "$cache_folder\cache_spotify.ps1", "$cache_folder\hide_window.vbs", "$cache_folder\run_ps.bat"
     $web_name_file_prev = "chrome_elf.zip", "SpotifySetup.exe", "cache_spotify.ps1", "hide_window.vbs", "run_ps.bat"
@@ -871,7 +871,7 @@ if (!($cache_on) -and !($cache_off)) {
 if ($exp_standart) { Write-Host ($lang).ExpStandart`n }
 if ($exp_spotify) { Write-Host ($lang).ExpSpotify`n }
 
-$url = "https://raw.githubusercontent.com/amd64fox/SpotX/main/patches/patches.json"
+$url = "https://raw.githubusercontent.com/xLamday/SpotX/main/patches/patches.json"
 $retries = 0
 
 while ($retries -lt 3) {
