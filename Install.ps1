@@ -244,7 +244,7 @@ function Format-LanguageCode {
 function CallLang($clg) {
 
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    $urlLang = "https://raw.githubusercontent.com/amd64fox/SpotX/main/scripts/installer-lang/$clg.ps1"
+    $urlLang = "https://raw.githubusercontent.com/xLamday/SpotX/main/scripts/installer-lang/$clg.ps1"
     $ProgressPreference = 'SilentlyContinue'
     
     try {
@@ -267,7 +267,7 @@ $lang = CallLang -clg $langCode
 # Set variable 'ru'.
 if ($langCode -eq 'ru') { 
     $ru = $true
-    $urlru = "https://raw.githubusercontent.com/amd64fox/SpotX/main/patches/Augmented%20translation/ru.json"
+    $urlru = "https://raw.githubusercontent.com/xLamday/SpotX/main/patches/Augmented%20translation/ru.json"
     $webjsonru = (Invoke-WebRequest -useb -Uri $urlru).Content | ConvertFrom-Json
 }
 
